@@ -3,7 +3,7 @@ import Button from '../../UI/Button/Button'
 
 import Aux from '../../../hoc/Aux';
 
-const orderSummary = ({ ingredients, purchaseCanceled, purchaseContinue }) => {
+const orderSummary = ({ ingredients, purchaseCanceled, purchaseContinue, price }) => {
   const ingredientSummary = Object.keys(ingredients)
     .map(igKey => {
       return (
@@ -19,6 +19,7 @@ const orderSummary = ({ ingredients, purchaseCanceled, purchaseContinue }) => {
       <ul>
         {ingredientSummary}
       </ul>
+      <p><strong>Total Price: {price.toFixed(2)}</strong></p>
       <p>Continue to checkout?</p>
       <Button clicked={purchaseCanceled} btnType="Danger">CANCEL</Button>
       <Button clicked={purchaseContinue} btnType="Success">CONTINUE</Button>
