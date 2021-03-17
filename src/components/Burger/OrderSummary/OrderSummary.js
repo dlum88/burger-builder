@@ -12,7 +12,7 @@ class OrderSummary extends Component {
    */
   componentWillUpdate() {
     // componentWillUpdate is depracated. left in for testing purposes
-    console.log('WILLUPDATE')
+    // console.log('WILLUPDATE')
   }
 
   render() {
