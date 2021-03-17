@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Aux';
-import Toolbar from '../Navigation/Toolbar/Toolbar'
-import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Aux from '../Aux/Aux';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar'
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import classes from './Layout.module.css';
 // import classes from './Layout.css';
 // CSS Modules is available In newer versions of React, you do not have to import classes. 
